@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "isdb-app": {
+    "isdb-fe": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -36,7 +36,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/isdb-app",
+            "outputPath": "dist/isdb-fe",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -81,18 +81,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "isdb-app:build"
+            "browserTarget": "isdb-fe:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "isdb-app:build:production"
+              "browserTarget": "isdb-fe:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "isdb-app:build"
+            "browserTarget": "isdb-fe:build"
           }
         },
         "test": {
@@ -129,15 +129,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "isdb-app:serve"
+            "devServerTarget": "isdb-fe:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "isdb-app:serve:production"
+              "devServerTarget": "isdb-fe:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "isdb-app"
+  "defaultProject": "isdb-fe"
 }
