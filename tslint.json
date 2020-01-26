@@ -12,13 +12,13 @@
     "directive-selector": [
       true,
       "attribute",
-      "app",
+      "isdb",
       "camelCase"
     ],
     "component-selector": [
       true,
       "element",
-      "app",
+      "isdb",
       "kebab-case"
     ],
     "import-blacklist": [
