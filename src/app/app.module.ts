@@ -6,10 +6,13 @@ import { ChartsModule } from 'ng2-charts';
 import { ComponentsModule } from './components/components.module';
 import { GlobalModule } from './global/global.module';
 import { CenturyApiModule } from './core/apis/century-api/century.api.module';
-
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { MatDialogModule } from '@angular/material/dialog';
+import { ScholarDialogComponent } from './components/scholar-dialog/scholar-dialog.component';
 @NgModule({
   declarations: [
     AppComponent,
+    ScholarDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -17,8 +20,11 @@ import { CenturyApiModule } from './core/apis/century-api/century.api.module';
     ChartsModule,
     GlobalModule,
     ComponentsModule,
-    CenturyApiModule
+    CenturyApiModule,
+    NoopAnimationsModule,
+    MatDialogModule
   ],
+  entryComponents: [ScholarDialogComponent],
   providers: [],
   bootstrap: [AppComponent]
 })

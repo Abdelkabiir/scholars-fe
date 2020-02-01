@@ -1,2 +1,8 @@
-<isdb-chart></isdb-chart>
-<!-- <isdb-pie-chart></isdb-pie-chart> -->
+
+<isdb-header></isdb-header>
+<div *ngIf="centuriesTiles" class="cards-container">
+    <div *ngFor="let title of centuriesTiles;index as i;">
+        <isdb-scholar-card [title]= "title" (click) = "openDialog(i)"></isdb-scholar-card>
+    </div>
+</div>
+<!-- <isdb-chart></isdb-chart> -->

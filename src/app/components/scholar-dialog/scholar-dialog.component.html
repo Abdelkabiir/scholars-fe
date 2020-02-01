@@ -1,0 +1,16 @@
+<div class="modal">
+    <div class="modal-title">
+        <span>{{data.title}}</span>
+    </div>
+</div>
+
+<div class="modal-content">
+    <div *ngFor="let scholar of data.scholars; index as i;" class="scholar-name">
+        <span>
+            {{scholar}}
+        </span>
+        <span class="index">
+            {{i+1}}
+        </span>
+    </div>
+</div>
