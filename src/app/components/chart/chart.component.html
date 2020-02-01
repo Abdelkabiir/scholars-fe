@@ -1,0 +1,11 @@
+<div class="chart-wrapper" *ngIf="isReady">
+  <canvas baseChart 
+      [datasets]="chart.lineChartData" 
+      [labels]="chart.lineChartLabels" 
+      [options]="chart.lineChartOptions"
+      [colors]="chart.lineChartColors" 
+      [legend]="chart.lineChartLegend" 
+      [chartType]="chart.lineChartType" 
+      [plugins]="chart.lineChartPlugins">
+  </canvas>
+</div>

@@ -1,5 +1,6 @@
 export interface Century {
     id: number;
-    data: Array<string>;
+    title: string;
+    scholars: [string];
     count: number;
 }
