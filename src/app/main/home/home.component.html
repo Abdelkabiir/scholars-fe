@@ -1,8 +1,9 @@
-
-<isdb-header></isdb-header>
-<div *ngIf="centuriesTiles" class="cards-container">
-    <div *ngFor="let title of centuriesTiles;index as i;">
-        <isdb-scholar-card [title]= "title" (click) = "openDialog(i)"></isdb-scholar-card>
+<div class="home-wrapper">
+    <div class="home-card left" (click)="navigateToScholarsList()">
+    <span class="text-large">{{scholarsListTitle}}</span>
+    </div>
+    
+    <div class="home-card right" (click)="navigateToCharts()">
+        <span class="text-large">{{chartsTitle}}</span>
     </div>
 </div>
-<!-- <isdb-chart></isdb-chart> -->

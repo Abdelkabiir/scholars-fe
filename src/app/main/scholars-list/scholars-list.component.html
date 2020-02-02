@@ -1,0 +1,7 @@
+<isdb-header [title]="title"></isdb-header>
+<isdb-menu></isdb-menu>
+<div *ngIf="centuriesTiles" class="cards-container">
+    <div *ngFor="let title of centuriesTiles;index as i;">
+        <isdb-scholar-card [title]="title" (click)="openDialog(i)"></isdb-scholar-card>
+    </div>
+</div>

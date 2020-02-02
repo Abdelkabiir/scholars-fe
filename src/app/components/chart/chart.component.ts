@@ -10,7 +10,7 @@ import { ChartC } from 'src/app/core/classes/chart.classe';
 })
 export class ChartComponent implements OnInit {
 
-  chartLabel = 'Number of Scholars';
+  chartLabel = 'عدد العلماء';
   chart: ChartC;
   centuriesData: Century[];
   isReady = false;

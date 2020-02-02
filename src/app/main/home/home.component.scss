@@ -1,8 +1,32 @@
-.cards-container {
-    margin: 10px 0;
-    padding: 10px 0;
+.home-wrapper {
+    margin: 101px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+
+    .home-card {
+        height: 350px;
+        width: 350px;
+        border: 8px white solid;
+        margin: 0 5px;
+
+        display: flex;
+        place-content: center;
+        align-items: center;
+
+        cursor: pointer;
+
+        &.left {
+            background-color: #00BCD4;
+        }
+        &.right {
+            background-color: #009688;
+        }
+
+        .text-large {
+            font-size: 30px;
+            color: aliceblue;
+        }
+    }
 }

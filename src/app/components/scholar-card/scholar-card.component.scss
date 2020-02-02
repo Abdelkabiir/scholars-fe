@@ -2,16 +2,16 @@
     width: 200px;
     height: 200px;
     margin: 2px;
-    border-radius: 5px;
-    background-color: darkcyan;
+    border: 2px #00000021 solid;
+    background-color: white;
     flex-direction: row;
     display: flex;
     place-content: center;
     align-items: center;
-    color: white;
+    color: #50b5b5;
     &:hover {
         background-color: #03b3b3;
-        color: #074c42;
+        color: white;
         cursor: pointer;
     }
 }
