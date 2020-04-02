@@ -1,6 +1,16 @@
-# IsdbFe
+# Scholars database project (frontend side)
+
+The application lists muslim scholars by centuries.
+
+
+[backend side](https://github.com/Abdelkabiir/scholars-be)
+
+
+[database connection helpers](https://github.com/Abdelkabiir/scholars-db)
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.2.
+
 
 ## Development server
 
